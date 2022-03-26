@@ -1,6 +1,5 @@
 package co.com.sofka.microAppEmpresarial.microAppEmpresarialback.service;
 
-import co.com.sofka.microAppEmpresarial.microAppEmpresarialback.dto.DiceDto;
 import co.com.sofka.microAppEmpresarial.microAppEmpresarialback.model.Dice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,8 +16,9 @@ public class DiceService
     public Mono<Dice>agregarDado()
     {
         Dice dice= new Dice();
-        
+
         return diceRepository.save(dice);
+
     }
 
 }

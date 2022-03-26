@@ -49,5 +49,7 @@ public class Dice
         double dado = Math.floor(Math.random() * 6) + 1;
         System.out.println(dado);
         return dado;
+
+
     }
 }
